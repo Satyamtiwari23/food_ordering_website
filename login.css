@@ -1,0 +1,552 @@
+/*=========================================
+Google Font
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff6b00,#ff9f43);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/*=========================================
+Main Container
+=========================================*/
+
+.container{
+    width:1100px;
+    max-width:100%;
+    min-height:700px;
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+/*=========================================
+Left Panel
+=========================================*/
+
+.left-panel{
+    width:45%;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    width:80%;
+    text-align:center;
+}
+
+.overlay h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:40px;
+}
+
+.overlay img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/*=========================================
+Right Panel
+=========================================*/
+
+.right-panel{
+    width:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    position:relative;
+    background:#ffffff;
+}
+
+/*=========================================
+Form Box
+=========================================*/
+
+.form-box{
+    width:100%;
+    max-width:420px;
+    display:none;
+    animation:fade .5s ease;
+}
+
+.form-box.active{
+    display:block;
+}
+
+.form-box h2{
+    font-size:34px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.form-box p{
+    color:#777;
+    margin-bottom:30px;
+    font-size:15px;
+}
+
+/*=========================================
+Animation
+=========================================*/
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+/*=========================================
+Input Box
+=========================================*/
+
+.input-box{
+    position:relative;
+    margin-bottom:22px;
+}
+
+.input-box input{
+    width:100%;
+    height:58px;
+    border:2px solid #e5e5e5;
+    border-radius:14px;
+    padding:0 50px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    background:#fafafa;
+}
+
+.input-box input:focus{
+    border-color:#ff6b00;
+    background:#fff;
+    box-shadow:0 0 12px rgba(255,107,0,.15);
+}
+
+.input-box i{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#999;
+    font-size:18px;
+}
+
+.toggle-password{
+    position:absolute;
+    right:50px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#888;
+    font-size:18px;
+    transition:.3s;
+}
+
+.toggle-password:hover{
+    color:#ff6b00;
+}
+
+/*=========================================
+Remember Me & Forgot Password
+=========================================*/
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#555;
+    cursor:pointer;
+}
+
+.options input{
+    accent-color:#ff6b00;
+}
+
+.options a{
+    color:#ff6b00;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+/*=========================================
+Main Button
+=========================================*/
+
+.btn{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#ff6b00,#ff914d);
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(255,107,0,.25);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(255,107,0,.35);
+}
+
+/*=========================================
+Divider
+=========================================*/
+
+.divider{
+    margin:30px 0;
+    text-align:center;
+    color:#888;
+    position:relative;
+    font-weight:500;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:40%;
+    height:1px;
+    background:#ddd;
+}
+
+.divider::before{
+    left:0;
+}
+
+.divider::after{
+    right:0;
+}
+
+/*=========================================
+Social Login
+=========================================*/
+
+.social-login{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.social-login button{
+    width:100%;
+    height:52px;
+    border:2px solid #ddd;
+    background:#fff;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.social-login button i{
+    margin-right:10px;
+    font-size:18px;
+}
+
+.google:hover{
+    background:#f8f8f8;
+    border-color:#db4437;
+}
+
+.facebook:hover{
+    background:#f8f8f8;
+    border-color:#1877f2;
+}
+
+/*=========================================
+Switch Login / Signup
+=========================================*/
+
+.switch{
+    margin-top:28px;
+    text-align:center;
+    font-size:15px;
+}
+
+.switch span{
+    color:#ff6b00;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.switch span:hover{
+    color:#e65c00;
+    text-decoration:underline;
+}
+/*=========================================
+OTP Section
+=========================================*/
+
+.otp-inputs{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    margin:30px 0;
+}
+
+.otp-inputs input{
+    width:55px;
+    height:60px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.otp-inputs input:focus{
+    border-color:#ff6b00;
+    box-shadow:0 0 10px rgba(255,107,0,.2);
+}
+
+/*=========================================
+Forgot Password
+=========================================*/
+
+#forgotBox p,
+#otpBox p{
+    text-align:center;
+}
+
+/*=========================================
+Button Hover Effect
+=========================================*/
+
+.btn:active{
+    transform:scale(.98);
+}
+
+/*=========================================
+Floating Food Animation
+=========================================*/
+
+.left-panel{
+    position:relative;
+    overflow:hidden;
+}
+
+.left-panel::before{
+    content:"🍕";
+    position:absolute;
+    top:8%;
+    left:10%;
+    font-size:40px;
+    animation:float 5s infinite linear;
+}
+
+.left-panel::after{
+    content:"🍔";
+    position:absolute;
+    bottom:10%;
+    right:12%;
+    font-size:45px;
+    animation:float 6s infinite linear;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-18px) rotate(12deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+}
+
+/*=========================================
+Input Placeholder
+=========================================*/
+
+input::placeholder{
+    color:#999;
+}
+
+/*=========================================
+Scrollbar
+=========================================*/
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6b00;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+/*=========================================
+Responsive Design
+=========================================*/
+
+@media(max-width:991px){
+
+    .container{
+        flex-direction:column;
+        width:95%;
+        min-height:auto;
+    }
+
+    .left-panel{
+        width:100%;
+        min-height:280px;
+    }
+
+    .right-panel{
+        width:100%;
+        padding:40px 30px;
+    }
+
+    .overlay h1{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        border-radius:18px;
+    }
+
+    .left-panel{
+        min-height:220px;
+    }
+
+    .overlay{
+        width:90%;
+    }
+
+    .overlay h1{
+        font-size:32px;
+    }
+
+    .overlay p{
+        font-size:15px;
+        line-height:24px;
+    }
+
+    .overlay img{
+        display:none;
+    }
+
+    .form-box h2{
+        font-size:30px;
+    }
+
+    .form-box p{
+        font-size:14px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .right-panel{
+        padding:30px 20px;
+    }
+
+    .input-box input{
+        height:52px;
+        font-size:15px;
+    }
+
+    .btn{
+        height:52px;
+        font-size:16px;
+    }
+
+    .otp-inputs{
+        gap:8px;
+    }
+
+    .otp-inputs input{
+        width:45px;
+        height:50px;
+        font-size:18px;
+    }
+
+    .social-login button{
+        height:48px;
+        font-size:14px;
+    }
+
+}
+
+/*================== =======================
+Selection
+=========================================*/
+
+::selection{
+    background:#ff6b00;
+    color:#fff;
+}

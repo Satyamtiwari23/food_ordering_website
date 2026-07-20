@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+    <div class="left-panel">
+
+        <div class="overlay">
+
+            <h1>🍔 FoodieHub</h1>
+
+            <p>
+                Fresh Food Delivered To Your Doorstep
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700"
+            alt="Food Image">
+
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="right-panel">
+
+        <!-- LOGIN FORM -->
+
+        <div class="form-box active" id="loginBox">
+
+            <h2>Welcome Back 👋</h2>
+
+            <p>Login to continue ordering delicious food.</p>
+
+            <form>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input type="text"
+                    placeholder="Email or Phone Number">
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password"
+                    placeholder="Password"
+                    id="loginPassword">
+
+                    <span class="toggle-password">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#" id="forgotBtn">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+                <button class="btn">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="divider">
+                OR
+            </div>
+
+            <div class="social-login">
+
+                <button class="google">
+                    <i class="fab fa-google"></i>
+                    Continue with Google
+                </button>
+
+                <button class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Continue with Facebook
+                </button>
+
+            </div>
+
+            <p class="switch">
+
+                Don't have an account?
+
+                <span id="showSignup">
+                    Sign Up
+                </span>
+
+            </p>
+
+        </div>
+
+        <!-- SIGNUP FORM -->
+
+        <div class="form-box" id="signupBox">
+
+            <h2>Create Account</h2>
+
+            <p>Join FoodieHub today.</p>
+
+            <form>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                    type="text"
+                    placeholder="Full Name">
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                    type="email"
+                    placeholder="Email Address">
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input
+                    type="text"
+                    placeholder="Phone Number">
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                    type="password"
+                    placeholder="Create Password">
+
+                </div>
+
+                <button class="btn">
+                    Sign Up
+                </button>
+
+            </form>
+
+            <p class="switch">
+
+                Already have an account?
+
+                <span id="showLogin">
+                    Login
+                </span>
+
+            </p>
+
+        </div>
+
+        <!-- FORGOT PASSWORD -->
+
+        <div class="form-box" id="forgotBox">
+
+            <h2>Forgot Password</h2>
+
+            <p>
+                Enter your Email or Phone Number
+            </p>
+
+            <form>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                    type="text"
+                    placeholder="Email or Phone">
+
+                </div>
+
+                <button class="btn" id="sendOtp">
+                    Send OTP
+                </button>
+
+            </form>
+
+            <p class="switch">
+
+                <span id="backLogin">
+                    Back to Login
+                </span>
+
+            </p>
+
+        </div>
+
+        <!-- OTP VERIFICATION -->
+
+        <div class="form-box" id="otpBox">
+
+            <h2>Verify OTP</h2>
+
+            <p>
+                Enter the 6-digit OTP
+            </p>
+
+            <div class="otp-inputs">
+
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+
+            </div>
+
+            <button class="btn">
+                Verify OTP
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
