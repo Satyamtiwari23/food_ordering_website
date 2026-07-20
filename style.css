@@ -1,0 +1,1069 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#222;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+ul{
+    list-style:none;
+}
+
+/*=========================
+Navbar
+=========================*/
+
+header{
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:999;
+}
+
+.navbar{
+    height:80px;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#ff6b00;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+.logo h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links li a{
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links li a:hover{
+    color:#ff6b00;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.location{
+    height:55px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#1d1d1d;
+    padding:10px 18px;
+    border-radius:40px;
+    border:1px solid rgba(255,255,255,.1);
+    transition:.35s;
+    cursor:pointer;
+}
+
+.location:hover{
+    border-color:#ff6b00;
+    box-shadow:0 0 15px rgba(255,107,0,.35);
+}
+
+.location-icon{
+    width:42px;
+    height:42px;
+    background:#ff6b00;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.location-icon i{
+    color:white;
+    font-size:18px;
+}
+
+.location-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.location-info .label{
+    color:#bbb;
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+.location-info select{
+    background:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    appearance:none;
+    padding-right:20px;
+}
+
+.location-info option{
+    background:#222;
+    color:white;
+}
+
+.login-btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    background:#ff6b00;
+    color:#fff;
+    padding:10px 24px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#e65c00;
+}
+.cart-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#ff6b00;
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.cart-btn:hover{
+
+    background:#e65c00;
+
+    transform:translateY(-2px);
+
+}
+
+.cart-btn i{
+
+    font-size:18px;
+
+}
+
+.cart-count{
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#ff6b00;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+/*=========================
+Profile Button
+=========================*/
+
+.profile-btn{
+
+    width:50px;
+    height:50px;
+    background:#ff6b00;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:22px;
+    transition:0.3s;
+
+}
+
+.profile-btn:hover{
+
+    background:#ff8c1a;
+    transform:scale(1.08);
+
+}
+
+/*=========================
+Hero Section
+=========================*/
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    background:linear-gradient(135deg,#fff7f1,#ffe8d8);
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:58px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:35px;
+}
+
+.search-box{
+    width:550px;
+    height:60px;
+    display:flex;
+    background:white;
+    border-radius:50px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:0 25px;
+    font-size:17px;
+}
+
+.search-box button{
+    width:80px;
+    border:none;
+    background:#ff6b00;
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#e65c00;
+}
+
+.hero-image{
+    width:42%;
+}
+
+.hero-image img{
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+/*=========================
+Common Section
+=========================*/
+
+.section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#222;
+    position:relative;
+}
+
+.title::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#ff6b00;
+    position:absolute;
+    left:50%;
+    bottom:-15px;
+    transform:translateX(-50%);
+    border-radius:10px;
+}
+/*=========================
+Food Categories
+=========================*/
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+}
+
+.category-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.4s;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.category-card img{
+    height:170px;
+    object-fit:cover;
+}
+
+.category-card h3{
+    padding:18px;
+    font-size:20px;
+    color:#333;
+}
+
+/*=========================
+Popular Restaurants
+=========================*/
+
+.restaurant-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+.restaurant-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+.restaurant-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.restaurant-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.restaurant-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.restaurant-card .content{
+    padding:22px;
+}
+
+.restaurant-card h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.restaurant-card p{
+    color:#666;
+    margin:8px 0;
+}
+
+.restaurant-card button{
+    margin-top:15px;
+    background:#ff6b00;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+}
+
+.restaurant-card button:hover{
+    background:#e65c00;
+}
+.rating{
+
+    color:#ff6b00;
+    font-weight:600;
+    margin:10px 0;
+
+}
+
+.cuisine{
+
+    color:#666;
+    font-size:15px;
+    margin-bottom:18px;
+
+}
+
+.restaurant-info{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+    color:#555;
+    font-size:15px;
+
+}
+
+.restaurant-info span{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+}
+
+.restaurant-info i{
+
+    color:#ff6b00;
+
+}
+
+.minimum-order{
+
+    margin-bottom:12px;
+    color:#444;
+    font-weight:500;
+
+}
+
+.minimum-order i{
+
+    color:#ff6b00;
+    margin-right:8px;
+
+}
+
+.delivery{
+
+    display:inline-block;
+    background:#e8fff0;
+    color:#1a9b3d;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+
+}
+
+/*=========================
+Popular Dishes
+=========================*/
+
+.dish-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.dish-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.4s;
+}
+
+.dish-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.dish-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.dish-card h3{
+    margin-top:20px;
+    font-size:24px;
+}
+
+.dish-card p{
+    color:#ff6b00;
+    font-size:22px;
+    font-weight:600;
+    margin:15px 0;
+}
+
+.dish-card button{
+    margin-bottom:25px;
+    border:none;
+    background:#ff6b00;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+}
+
+.dish-card button:hover{
+    background:#e65c00;
+}
+
+/*=========================
+Card Hover Animation
+=========================*/
+
+.category-card,
+.restaurant-card,
+.dish-card{
+    transition:all .35s ease;
+}
+
+.category-card:hover img,
+.restaurant-card:hover img,
+.dish-card:hover img{
+    transform:scale(1.08);
+    transition:.5s;
+}
+
+.category-card img,
+.restaurant-card img,
+.dish-card img{
+    transition:.5s;
+}
+
+/*=========================
+Offers Section
+=========================*/
+
+.offers-section{
+
+    padding:90px 8%;
+    background:#fdf5ef;
+
+}
+
+.section-title{
+
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:60px;
+    color:#222;
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+    width:90px;
+    height:5px;
+    background:#ff6b00;
+    position:absolute;
+    left:50%;
+    bottom:-18px;
+    transform:translateX(-50%);
+    border-radius:10px;
+
+}
+
+.offer-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+
+}
+
+.offer-card{
+
+    background:linear-gradient(135deg,#ff6b00,#ff9f43);
+    color:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.offer-card.blue{
+
+    background:linear-gradient(135deg,#0ea5e9,#38bdf8);
+
+}
+
+.offer-card.red{
+
+    background:linear-gradient(135deg,#ef4444,#f97316);
+
+}
+
+.offer-card:hover{
+
+    transform:translateY(-12px);
+    box-shadow:0 30px 50px rgba(0,0,0,.25);
+
+}
+
+.offer-tag{
+
+    display:inline-block;
+    background:white;
+    color:#ff6b00;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:25px;
+
+}
+
+.offer-card h3{
+
+    font-size:24px;
+    margin-bottom:15px;
+
+}
+
+.offer-card h1{
+
+    font-size:3rem;
+    margin-bottom:10px;
+
+}
+
+.offer-card p{
+
+    font-size:18px;
+    margin-bottom:25px;
+
+}
+
+.coupon{
+
+    display:inline-block;
+    border:2px dashed white;
+    padding:12px 22px;
+    border-radius:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:20px;
+
+}
+
+.offer-card small{
+
+    display:block;
+    margin-bottom:25px;
+    opacity:.9;
+    font-size:15px;
+
+}
+
+.offer-card button{
+
+    border:none;
+    background:white;
+    color:#ff6b00;
+    padding:14px 28px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.offer-card button:hover{
+
+    background:#222;
+    color:white;
+
+}
+
+@media(max-width:768px){
+
+.section-title{
+
+    font-size:2.2rem;
+
+}
+
+.offer-card{
+
+    text-align:center;
+
+}
+
+}
+/*=========================/*=========================
+Footer
+==========================*/
+
+footer{
+    background:#111;
+    color:#fff;
+    padding:70px 8% 30px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:50px;
+}
+
+.footer-box{
+    flex:1;
+    min-width:220px;
+}
+
+.footer-box h2{
+    color:#ff6b00;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.footer-box h3{
+    color:#ff6b00;
+    margin-bottom:20px;
+}
+
+.footer-box p{
+    color:#cfcfcf;
+    line-height:2;
+    font-size:16px;
+}
+
+.footer-box a{
+    display:block;
+    color:#cfcfcf;
+    text-decoration:none;
+    margin:12px 0;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:#ff6b00;
+    transform:translateX(5px);
+}
+
+.footer-cities,
+.footer-payment,
+.footer-social{
+    text-align:center;
+    margin-top:45px;
+}
+
+.footer-cities h3,
+.footer-payment h3,
+.footer-social h3{
+    color:#ff6b00;
+    margin-bottom:18px;
+}
+
+.footer-cities p{
+    color:#cfcfcf;
+    line-height:2;
+}
+
+.payment-icons i{
+    font-size:42px;
+    margin:0 12px;
+    color:white;
+    transition:.3s;
+}
+
+.payment-icons i:hover{
+    color:#ff6b00;
+    transform:translateY(-5px);
+}
+
+.footer-social a{
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    color:#ff6b00;
+    transform:scale(1.2);
+}
+
+footer hr{
+    border:none;
+    border-top:1px solid #333;
+    margin:40px 0 20px;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    color:#bdbdbd;
+    font-size:15px;
+}
+
+@media(max-width:768px){
+
+.footer-container{
+    flex-direction:column;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+}
+
+.payment-icons i{
+    font-size:34px;
+}
+
+.footer-social a{
+    font-size:24px;
+}
+
+}
+
+
+/*=========================
+Buttons
+=========================*/
+
+button{
+    transition:.3s ease;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+Scrollbar
+=========================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6b00;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#e65c00;
+}
+
+/*=========================
+Responsive Design
+=========================*/
+
+@media(max-width:992px){
+
+    .navbar{
+        padding:0 5%;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:50px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-image{
+        width:90%;
+    }
+
+    .search-box{
+        width:100%;
+        max-width:550px;
+        margin:auto;
+    }
+
+    .nav-links{
+        gap:18px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-right{
+        flex-direction:column;
+    }
+
+    .hero-text h1{
+        font-size:40px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .title{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero{
+        padding:60px 5%;
+    }
+
+    .section{
+        padding:60px 5%;
+    }
+
+    .offer-section{
+        padding:60px 5%;
+    }
+
+    .hero-text h1{
+        font-size:32px;
+    }
+
+    .logo h2{
+        font-size:24px;
+    }
+
+    .logo i{
+        font-size:28px;
+    }
+
+    .search-box{
+        height:55px;
+    }
+
+    .search-box input{
+        font-size:15px;
+    }
+
+    .search-box button{
+        width:70px;
+    }
+
+}
+
+/*=========================
+Fade Animation
+=========================*/
+
+.category-card,
+.restaurant-card,
+.dish-card,
+.offer-box{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*=========================
+Selection Color
+=========================*/
+
+::selection{
+    background:#ff6b00;
+    color:#fff;
+}

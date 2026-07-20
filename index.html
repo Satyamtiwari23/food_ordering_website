@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub | Food Ordering Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!--  NAVBAR  -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+    <i class="fa-solid fa-utensils"></i>
+    <h2>FoodieHub</h2>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#">Home</a></li>
+<li><a href="#categories">Categories</a></li>
+<li><a href="#restaurants">Restaurants</a></li>
+<li><a href="#offers">Offers</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<div class="location">
+    <div class="location-icon">
+        <i class="fa-solid fa-location-dot"></i>
+    </div>
+
+    <div class="location-info">
+        <span class="label">Deliver To</span>
+
+        <select>
+            <option>Gorakhpur</option>
+            <option>Lucknow</option>
+            <option>Kanpur</option>
+            <option>New Delhi</option>
+            <option>Mumbai</option>
+        </select>
+    </div>
+</div>
+
+<!-- cart -->
+
+<a href="login.html" class="login-btn">Login</a>
+
+<a href="cart.html" class="cart-btn">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span>Cart</span>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</a>
+
+<!--  Profile  -->
+
+<a href="profile.html" class="profile-btn">
+
+    <i class="fa-solid fa-user"></i>
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Order Delicious Food Anytime
+</h1>
+
+<p>
+Fast Delivery | Best Restaurants | Amazing Offers
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search food or restaurant...">
+
+<button id="searchBtn">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+alt="Food">
+
+</div>
+
+</section>
+
+<!-- ================= FOOD CATEGORIES ================= -->
+
+<section id="categories" class="section">
+
+<h2 class="title">
+Food Categories
+</h2>
+
+<div class="category-container">
+    
+      <!-- pizza -->
+
+<a href="pizza.html" class="category-card">
+
+  <div class="category-card">
+
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500">
+
+    <h3>Pizza</h3>
+
+  </div>
+
+</a>
+       <!-- burger -->
+
+<a href="burger.html" class="category-card">
+  <div class="category-card">
+
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500">
+
+    <h3>Burger</h3>
+
+  </div>
+
+</a>
+
+        <!-- biryani -->
+
+<a href="biryani.html" class="category-card">
+
+  <div class="category-card">
+
+    <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500">
+
+    <h3>Biryani</h3>
+
+  </div>
+
+</a>  
+
+        <!-- pasta -->
+
+<a href="pasta.html" class="category-card">
+
+  <div class="category-card">  
+
+    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500">
+
+    <h3>Pasta</h3>
+
+  </div>
+
+</a>
+  
+        <!-- salad -->
+
+<a href="salaad.html" class="category-card">
+
+  <div class="category-card">
+
+    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500">
+
+    <h3>Salad</h3>
+
+  </div>
+
+</a>
+
+        <!-- dessert -->
+
+<a href="dessert.html" class="category-card">
+
+  <div class="category-card">
+
+    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500">
+
+    <h3>Dessert</h3>
+
+  </div>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= POPULAR RESTAURANTS ================= -->
+
+
+<section id="restaurants" class="section">
+
+<h2 class="title">
+Popular Restaurants
+</h2>
+
+<div class="restaurant-container">
+
+    <!-- Italian Kitchen -->
+
+    <a href="italian_kitchen.html" class="restaurant-link">
+
+        <div class="restaurant-card">
+
+            <img src="italian_kitchen.jpg">
+
+            <div class="content">
+
+                <h3>Italian Kitchen</h3>
+
+                <p>⭐⭐⭐⭐☆</p>
+
+                <p>Pizza • Pasta • Italian</p>
+
+                <div class="restaurant-info">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        2.3 km
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-clock"></i>
+                        25-30 min
+                    </span>
+
+                </div>
+
+                <div class="minimum-order">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Min Order ₹199
+
+                </div>
+
+                <div class="delivery">
+
+                    🚚 Free Delivery
+
+                </div>
+
+                <button>View Menu</button>
+
+            </div>
+
+        </div>
+
+    </a>
+
+    <!-- Royal Biryani -->
+
+    <a href="royal_biryani.html" class="restaurant-link">
+
+        <div class="restaurant-card">
+
+            <img src="biryani (2).jpg">
+
+            <div class="content">
+
+                <h3>Royal Biryani</h3>
+
+                <p>⭐⭐⭐⭐⭐</p>
+
+                <p>Mughlai • Biryani • Kebabs</p>
+
+                <div class="restaurant-info">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        4.5 km
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-clock"></i>
+                        25-30 min
+                    </span>
+
+                </div>
+
+                <div class="minimum-order">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Min Order ₹149
+
+                </div>
+
+                <div class="delivery">
+
+                    🚚 Free Delivery
+
+                </div>
+
+                <button>View Menu</button>
+
+            </div>
+
+        </div>
+
+    </a>
+
+    <!-- Burger House -->
+
+    <a href="burger_house.html" class="restaurant-link">
+
+        <div class="restaurant-card">
+
+            <img src="burger_house.jpg">
+
+            <div class="content">
+
+                <h3>Burger House</h3>
+
+                <p>⭐⭐⭐⭐☆</p>
+
+                <p>Burger • Fries</p>
+
+                <div class="restaurant-info">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        9 km
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-clock"></i>
+                        20-25 min
+                    </span>
+
+                </div>
+
+                <div class="minimum-order">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Min Order ₹199
+
+                </div>
+
+                <div class="delivery">
+
+                    🚚 Free Delivery
+
+                </div>
+
+                <button>View Menu</button>
+
+            </div>
+
+        </div>
+
+    </a>
+
+    <!-- Chinese Wok -->
+
+    <a href="chinese_wok.html" class="restaurant-link">
+
+        <div class="restaurant-card">
+
+            <img src="chinese_wok.jpg">
+
+            <div class="content">
+
+                <h3>Chinese Wok</h3>
+
+                <p>⭐⭐⭐⭐⭐</p>
+
+                <p>Chinese • Asian</p>
+
+                <div class="restaurant-info">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        3.8 km
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-clock"></i>
+                        25-30 min
+                    </span>
+
+                </div>
+
+                <div class="minimum-order">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Min Order ₹199
+
+                </div>
+
+                <div class="delivery">
+
+                    🚚 Free Delivery
+
+                </div>
+
+                <button>View Menu</button>
+
+            </div>
+
+        </div>
+
+    </a>
+
+    <!-- Mexican Fiesta -->
+
+    <a href="mexican_fiesta.html" class="restaurant-link">
+
+        <div class="restaurant-card">
+
+            <img src="mexican_fiesta.jpg">
+
+            <div class="content">
+
+                <h3>Mexican Fiesta</h3>
+
+                <p>⭐⭐⭐⭐☆</p>
+
+                <p>Mexican • Tacos</p>
+
+                <div class="restaurant-info">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        5.4 km
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-clock"></i>
+                        30-35 min
+                    </span>
+
+                </div>
+
+                <div class="minimum-order">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Min Order ₹249
+
+                </div>
+
+                <div class="delivery">
+
+                    🚚 Free Delivery
+
+                </div>
+
+                <button>View Menu</button>
+
+            </div>
+
+        </div>
+
+    </a>
+
+    <!-- Cafe Delight -->
+
+    <a href="cafe_delight.html" class="restaurant-link">
+
+        <div class="restaurant-card">
+
+            <img src="cafe_delight.jpg">
+
+            <div class="content">
+
+                <h3>Cafe Delight</h3>
+
+                <p>⭐⭐⭐⭐☆</p>
+
+                <p>Coffee • Bakery</p>
+
+                <div class="restaurant-info">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        2.1 km
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-clock"></i>
+                        15-20 min
+                    </span>
+
+                </div>
+
+                <div class="minimum-order">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Min Order ₹149
+
+                </div>
+
+                <div class="delivery">
+
+                    🚚 Free Delivery
+
+                </div>
+
+                <button>View Menu</button>
+
+            </div>
+
+        </div>
+
+    </a>
+
+</div>
+
+</section>
+
+<!-- ================= POPULAR DISHES ================= -->
+
+<div class="dish-container">
+
+    <div class="dish-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500">
+        <h3>Cheese Pizza</h3>
+        <p class="price">₹299</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="dish-card">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500">
+        <h3>Burger</h3>
+        <p class="price">₹199</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="dish-card">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500">
+        <h3>Chicken Biryani</h3>
+        <p class="price">₹349</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="dish-card">
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500">
+        <h3>White Sauce Pasta</h3>
+        <p class="price">₹249</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+<!-- ================= OFFERS ================= -->
+
+<section class="offers-section" id="offers">
+
+    <h2 class="section-title">
+
+        Today's Offers
+
+    </h2>
+
+    <div class="offer-container">
+
+        <!-- Offer 1 -->
+
+        <div class="offer-card">
+
+            <span class="offer-tag">
+
+                🔥 LIMITED TIME
+
+            </span>
+
+            <h3>
+
+                Pizza Palace
+
+            </h3>
+
+            <h1>
+
+                50% OFF
+
+            </h1>
+
+            <p>
+
+                On your first order
+
+            </p>
+
+            <div class="coupon">
+
+                WELCOME50
+
+            </div>
+
+            <small>
+
+                Valid Till 31 July
+
+            </small>
+
+            <button>
+
+                Claim Offer →
+
+            </button>
+
+        </div>
+
+        <!-- Offer 2 -->
+
+        <div class="offer-card blue">
+
+            <span class="offer-tag">
+
+                🚚 FREE DELIVERY
+
+            </span>
+
+            <h3>
+
+                Royal Biryani
+
+            </h3>
+
+            <h1>
+
+                FREE
+
+            </h1>
+
+            <p>
+
+                Above ₹299
+
+            </p>
+
+            <div class="coupon">
+
+                FREEDEL
+
+            </div>
+
+            <small>
+
+                Limited Time
+
+            </small>
+
+            <button>
+
+                Order Now →
+
+            </button>
+
+        </div>
+
+        <!-- Offer 3 -->
+
+        <div class="offer-card red">
+
+            <span class="offer-tag">
+
+                🎉 BUY 1 GET 1
+
+            </span>
+
+            <h3>
+
+                Burger House
+
+            </h3>
+
+            <h1>
+
+                BUY 1 GET 1
+
+            </h1>
+
+            <p>
+
+                Selected Burgers
+
+            </p>
+
+            <div class="coupon">
+
+                BOGO
+
+            </div>
+
+            <small>
+
+                Weekend Special
+
+            </small>
+
+            <button>
+
+                Grab Deal →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer id="contact">
+
+<div class="footer-container">
+
+    <!-- Brand -->
+
+    <div class="footer-box">
+
+        <h2>FoodieHub</h2>
+
+        <p>
+
+            Delicious food delivered to your doorstep.
+
+        </p>
+
+        <p>
+
+            🍽️ 10,000+ Restaurants
+
+        </p>
+
+        <p>
+
+            🚚 Fast Delivery
+
+        </p>
+
+        <p>
+
+            ⭐ Trusted by 1 Million+ Customers
+
+        </p>
+
+    </div>
+
+    <!-- Company -->
+
+    <div class="footer-box">
+
+        <h3>Company</h3>
+
+        <a href="#">About Us</a>
+
+        <a href="#">Careers</a>
+
+        <a href="#">Blog</a>
+
+        <a href="#">Press</a>
+
+        <a href="#">Investor Relations</a>
+
+    </div>
+
+    <!-- Help -->
+
+    <div class="footer-box">
+
+        <h3>Help & Support</h3>
+
+        <a href="#">FAQ</a>
+
+        <a href="#">Contact Us</a>
+
+        <a href="#">Refund Policy</a>
+
+        <a href="#">Privacy Policy</a>
+
+        <a href="#">Terms & Conditions</a>
+
+    </div>
+
+    <!-- Partner -->
+
+    <div class="footer-box">
+
+        <h3>Partner With Us</h3>
+
+        <a href="#">Become a Partner</a>
+
+        <a href="#">Add Restaurant</a>
+
+        <a href="#">Delivery Partner</a>
+
+        <a href="#">Business Orders</a>
+
+    </div>
+
+</div>
+
+<!-- Cities -->
+
+<div class="footer-cities">
+
+    <h3>Available Cities</h3>
+
+    <p>
+
+        Gorakhpur • Lucknow • Kanpur • Delhi • Noida • Jaipur • Mumbai • Pune
+
+    </p>
+
+</div>
+
+<!-- Payment -->
+
+<div class="footer-payment">
+
+    <h3>Accepted Payments</h3>
+
+    <div class="payment-icons">
+
+        <i class="fa-brands fa-cc-visa"></i>
+
+        <i class="fa-brands fa-cc-mastercard"></i>
+
+        <i class="fa-brands fa-google-pay"></i>
+
+        <i class="fa-brands fa-paypal"></i>
+
+    </div>
+
+</div>
+
+<!-- Social -->
+
+<div class="footer-social">
+
+    <h3>Follow Us</h3>
+
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+    <a href="#"><i class="fab fa-instagram"></i></a>
+
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+    <a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+
+    <p>
+
+        © 2026 FoodieHub | All Rights Reserved
+
+    </p>
+
+    <p>
+
+        Made with ❤️ in India
+
+    </p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
