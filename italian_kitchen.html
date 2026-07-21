@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pizza Palace | FoodieHub</title>
+
+    <link rel="stylesheet"
+          href="restaurant.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==========================
+Header
+===========================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back
+
+        </a>
+
+        <h2 class="logo">
+
+            🍔 FoodieHub
+
+        </h2>
+
+        <button class="favorite">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </nav>
+
+</header>
+
+<!--==========================
+Restaurant Banner
+===========================-->
+
+<section class="restaurant-banner">
+
+    <img src="pizza.png"
+         alt="Restaurant">
+
+    <div class="overlay">
+
+        <h1>Pizza Palace</h1>
+
+        <p>
+
+            Italian • Pizza • Fast Food
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+Restaurant Information
+===========================-->
+
+<section class="restaurant-info">
+
+    <div class="info-card">
+
+        <div class="rating">
+
+            ⭐ 4.6
+
+            <span>
+
+                (1200+ Reviews)
+
+            </span>
+
+        </div>
+
+        <div class="details">
+
+            <p>
+
+                <i class="fa-solid fa-clock"></i>
+
+                25 - 30 mins
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                2.3 km Away
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-wallet"></i>
+
+                Minimum Order ₹199
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-truck"></i>
+
+                Free Delivery
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+Navigation Tabs
+===========================-->
+
+<section class="tabs">
+
+    <button class="tab active"
+            data-target="menu">
+
+        Menu
+
+    </button>
+
+    <button class="tab"
+            data-target="reviews">
+
+        Reviews
+
+    </button>
+
+    <button class="tab"
+            data-target="delivery">
+
+        Delivery
+
+    </button>
+
+</section>
+
+<!--==========================
+Menu Section
+===========================-->
+
+<section id="menu"
+         class="tab-content active">
+
+    <h2>
+
+        Popular Categories
+
+    </h2>
+
+    <div class="categories">
+
+        <button>🍕 Pizza</button>
+
+        <button>🍔 Burger</button>
+
+        <button>🍝 Pasta</button>
+
+        <button>🥤 Drinks</button>
+
+        <button>🍰 Dessert</button>
+
+    </div>
+
+    <h2>
+
+        Popular Dishes
+
+    </h2>
+
+    <div class="menu-container">
+
+        <!-- Dish -->
+
+        <div class="menu-card">
+
+            <img src="margarita pizza.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    Margherita Pizza
+
+                </h3>
+
+                <p>
+
+                    Fresh mozzarella, basil &
+                    tomato sauce.
+
+                </p>
+
+                <h4>
+
+                    ₹299
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Dish -->
+
+        <div class="menu-card">
+
+            <img src="pepperoni_pizza.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    Pepperoni Pizza
+
+                </h3>
+
+                <p>
+
+                    Loaded with pepperoni
+                    & cheese.
+
+                </p>
+
+                <h4>
+
+                    ₹399
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Dish -->
+
+        <div class="menu-card">
+
+            <img src="creamy_pasta.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    White Sauce Pasta
+
+                </h3>
+
+                <p>
+
+                    Creamy pasta with herbs.
+
+                </p>
+
+                <h4>
+
+                    ₹249
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+Reviews
+===========================-->
+
+<section id="reviews"
+         class="tab-content">
+
+    <h2>
+
+        Customer Reviews
+
+    </h2>
+
+    <div class="review-card">
+
+        <h3>
+
+            ⭐⭐⭐⭐⭐
+
+        </h3>
+
+        <p>
+
+            Delicious pizza and very fast
+            delivery.
+
+        </p>
+
+        <span>
+
+            - Rahul Sharma
+
+        </span>
+
+    </div>
+
+    <div class="review-card">
+
+        <h3>
+
+            ⭐⭐⭐⭐☆
+
+        </h3>
+
+        <p>
+
+            Amazing taste.
+            Packaging was excellent.
+
+        </p>
+
+        <span>
+
+            - Priya Singh
+
+        </span>
+
+    </div>
+
+</section>
+
+<!--==========================
+Delivery Information
+===========================-->
+
+<section id="delivery"
+         class="tab-content">
+
+    <h2>
+
+        Delivery Information
+
+    </h2>
+
+    <div class="delivery-box">
+
+        <p>
+
+            📍 Address :
+            Civil Lines, Gorakhpur
+
+        </p>
+
+        <p>
+
+            🚚 Delivery Charge :
+            FREE
+
+        </p>
+
+        <p>
+
+            ⏱ Estimated Time :
+            25-30 Minutes
+
+        </p>
+
+        <p>
+
+            💰 Minimum Order :
+            ₹199
+
+        </p>
+
+        <p>
+
+            📞 Contact :
+            +91 9876543210
+
+        </p>
+
+    </div>
+
+</section>
+
+<script src="restaurant.js"></script>
+
+</body>
+</html>
