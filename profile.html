@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | FoodieHub</title>
+
+    <link rel="stylesheet"
+          href="profile.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--=========================
+Navbar
+==========================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html"
+           class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Home
+
+        </a>
+
+        <h2 class="logo">
+
+            👤 My Profile
+
+        </h2>
+
+        <div class="nav-icons">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <i class="fa-solid fa-gear"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!--=========================
+Profile Banner
+==========================-->
+
+<section class="profile-banner">
+
+    <div class="profile-card">
+
+        <div class="profile-image">
+
+            <img src="profile.png"
+                 alt="Profile">
+
+            <button class="camera-btn">
+
+                <i class="fa-solid fa-camera"></i>
+
+            </button>
+
+        </div>
+
+        <h1>
+
+            Ayush Kumar Gupta
+
+        </h1>
+
+        <span class="member">
+
+            ⭐ Premium Member
+
+        </span>
+
+        <p>
+
+            <i class="fa-solid fa-envelope"></i>
+
+            ayush@email.com
+
+        </p>
+
+        <p>
+
+            <i class="fa-solid fa-phone"></i>
+
+            +91 9876543210
+
+        </p>
+
+        <button class="edit-btn">
+
+            <i class="fa-solid fa-user-pen"></i>
+
+            Edit Profile
+
+        </button>
+
+    </div>
+
+</section>
+
+<!--=========================
+Dashboard Statistics
+==========================-->
+
+<section class="dashboard">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-bag-shopping"></i>
+
+        <h2>
+
+            28
+
+        </h2>
+
+        <p>
+
+            Orders
+
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-heart"></i>
+
+        <h2>
+
+            12
+
+        </h2>
+
+        <p>
+
+            Favorites
+
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-star"></i>
+
+        <h2>
+
+            850
+
+        </h2>
+
+        <p>
+
+            Reward Points
+
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-ticket"></i>
+
+        <h2>
+
+            5
+
+        </h2>
+
+        <p>
+
+            Coupons
+
+        </p>
+
+    </div>
+
+</section>
+<!--=========================
+Recent Orders
+==========================-->
+
+<section class="recent-orders">
+
+    <div class="section-header">
+
+        <h2>
+
+            Recent Orders
+
+        </h2>
+
+        <a href="#">
+
+            View All
+
+        </a>
+
+    </div>
+
+    <!-- Order 1 -->
+
+    <div class="order-card">
+
+        <img src="pepperoni_pizza.jpg"
+             alt="Pizza">
+
+        <div class="order-details">
+
+            <h3>
+
+                Pepperoni Pizza
+
+            </h3>
+
+            <p>
+
+                Pizza Palace
+
+            </p>
+
+            <span>
+
+                Order #10245
+
+            </span>
+
+        </div>
+
+        <div class="order-right">
+
+            <h4>
+
+                ₹399
+
+            </h4>
+
+            <span class="delivered">
+
+                Delivered
+
+            </span>
+
+            <button>
+
+                Reorder
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Order 2 -->
+
+    <div class="order-card">
+
+        <img src="chicken_biryani.jpg"
+             alt="Biryani">
+
+        <div class="order-details">
+
+            <h3>
+
+                Chicken Biryani
+
+            </h3>
+
+            <p>
+
+                Royal Biryani
+
+            </p>
+
+            <span>
+
+                Order #10246
+
+            </span>
+
+        </div>
+
+        <div class="order-right">
+
+            <h4>
+
+                ₹349
+
+            </h4>
+
+            <span class="preparing">
+
+                Preparing
+
+            </span>
+
+            <button>
+
+                Track Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Order 3 -->
+
+    <div class="order-card">
+
+        <img src="chicken_burger.jpg"
+             alt="Burger">
+
+        <div class="order-details">
+
+            <h3>
+
+                Burger Combo
+
+            </h3>
+
+            <p>
+
+                Burger House
+
+            </p>
+
+            <span>
+
+                Order #10247
+
+            </span>
+
+        </div>
+
+        <div class="order-right">
+
+            <h4>
+
+                ₹249
+
+            </h4>
+
+            <span class="ontheway">
+
+                On The Way
+
+            </span>
+
+            <button>
+
+                Track Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================
+Saved Addresses
+==========================-->
+
+<section class="saved-address">
+
+    <div class="section-header">
+
+        <h2>
+
+            Saved Addresses
+
+        </h2>
+
+        <button class="add-address">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add New
+
+        </button>
+
+    </div>
+
+    <div class="address-card">
+
+        <i class="fa-solid fa-house"></i>
+
+        <div>
+
+            <h3>
+
+                Home
+
+            </h3>
+
+            <p>
+
+                Civil Lines, Gorakhpur,
+                Uttar Pradesh - 273001
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="address-card">
+
+        <i class="fa-solid fa-building"></i>
+
+        <div>
+
+            <h3>
+
+                Hostel
+
+            </h3>
+
+            <p>
+
+                LDAH Rajkiya Engineering College,
+                Mainpuri, Uttar Pradesh
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section><!--=========================
+Favourite Restaurants
+==========================-->
+
+<section class="favorites">
+
+    <div class="section-header">
+
+        <h2>
+
+            Favourite Restaurants
+
+        </h2>
+
+        <a href="#">
+
+            View All
+
+        </a>
+
+    </div>
+
+    <div class="favorite-container">
+
+        <!-- Restaurant -->
+
+        <div class="favorite-card">
+
+            <img src="pizza.png"
+                 alt="Pizza Palace">
+
+            <h3>
+
+                Pizza Palace
+
+            </h3>
+
+            <p>
+
+                Italian • Pizza
+
+            </p>
+
+            <button>
+
+                Order Again
+
+            </button>
+
+        </div>
+
+        <!-- Restaurant -->
+
+        <div class="favorite-card">
+
+            <img src="biryani (2).jpg"
+                 alt="Royal Biryani">
+
+            <h3>
+
+                Royal Biryani
+
+            </h3>
+
+            <p>
+
+                Biryani • Mughlai
+
+            </p>
+
+            <button>
+
+                Order Again
+
+            </button>
+
+        </div>
+
+        <!-- Restaurant -->
+
+        <div class="favorite-card">
+
+            <img src="cheese_burger.jpg"
+                 alt="Burger House">
+
+            <h3>
+
+                Burger House
+
+            </h3>
+
+            <p>
+
+                Burgers • Fast Food
+
+            </p>
+
+            <button>
+
+                Order Again
+
+            </button>
+
+        </div>
+
+        <!-- Restaurant -->
+
+        <div class="favorite-card">
+
+            <img src="Veg_Momos.jpg"
+                 alt="Chinese Wok">
+
+            <h3>
+
+                Chinese Wok
+
+            </h3>
+
+            <p>
+
+                Chinese • Noodles
+
+            </p>
+
+            <button>
+
+                Order Again
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================
+Rewards & Coupons
+==========================-->
+
+<section class="rewards">
+
+    <div class="section-header">
+
+        <h2>
+
+            Rewards & Coupons
+
+        </h2>
+
+    </div>
+
+    <div class="reward-container">
+
+        <div class="reward-card">
+
+            <i class="fa-solid fa-gift"></i>
+
+            <h3>
+
+                WELCOME50
+
+            </h3>
+
+            <p>
+
+                Get 50% OFF on your
+                next order.
+
+            </p>
+
+        </div>
+
+        <div class="reward-card">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <h3>
+
+                FREEDEL
+
+            </h3>
+
+            <p>
+
+                Free Delivery on
+                orders above ₹299.
+
+            </p>
+
+        </div>
+
+        <div class="reward-card">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h3>
+
+                850 Points
+
+            </h3>
+
+            <p>
+
+                Redeem reward points
+                for exciting offers.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================
+Payment Methods
+==========================-->
+
+<section class="payment-methods">
+
+    <div class="section-header">
+
+        <h2>
+
+            Payment Methods
+
+        </h2>
+
+    </div>
+
+    <div class="payment-card">
+
+        <i class="fa-brands fa-google-pay"></i>
+
+        <span>
+
+            Google Pay
+
+        </span>
+
+    </div>
+
+    <div class="payment-card">
+
+        <i class="fa-brands fa-cc-visa"></i>
+
+        <span>
+
+            Visa Card •••• 4589
+
+        </span>
+
+    </div>
+
+    <div class="payment-card">
+
+        <i class="fa-solid fa-money-bill-wave"></i>
+
+        <span>
+
+            Cash On Delivery
+
+        </span>
+
+    </div>
+
+</section>
+
+<!--=========================
+Premium Membership
+==========================-->
+
+<section class="membership">
+
+    <div class="membership-card">
+
+        <i class="fa-solid fa-crown"></i>
+
+        <h2>
+
+            FoodieHub Premium
+
+        </h2>
+
+        <p>
+
+            Enjoy FREE delivery,
+            exclusive discounts,
+            priority support and
+            exciting reward points.
+
+        </p>
+
+        <button>
+
+            Upgrade Now
+
+        </button>
+
+    </div>
+
+</section>
+<!--=========================
+Account Settings
+==========================-->
+
+<section class="account-settings">
+
+    <div class="section-header">
+
+        <h2>
+
+            Account Settings
+
+        </h2>
+
+    </div>
+
+    <div class="setting-card">
+
+        <i class="fa-solid fa-user-pen"></i>
+
+        <span>
+
+            Edit Profile
+
+        </span>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </div>
+
+    <div class="setting-card">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <span>
+
+            Manage Addresses
+
+        </span>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </div>
+
+    <div class="setting-card">
+
+        <i class="fa-solid fa-bell"></i>
+
+        <span>
+
+            Notifications
+
+        </span>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </div>
+
+    <div class="setting-card">
+
+        <i class="fa-solid fa-lock"></i>
+
+        <span>
+
+            Privacy & Security
+
+        </span>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </div>
+
+    <div class="setting-card">
+
+        <i class="fa-solid fa-circle-question"></i>
+
+        <span>
+
+            Help & Support
+
+        </span>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </div>
+
+    <div class="setting-card">
+
+        <i class="fa-solid fa-file-lines"></i>
+
+        <span>
+
+            Terms & Conditions
+
+        </span>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </div>
+
+</section>
+
+<!--=========================
+Logout
+==========================-->
+
+<section class="logout-section">
+
+    <button class="logout-btn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</section>
+
+<!--=========================
+Footer
+==========================-->
+
+<footer class="profile-footer">
+
+    <div class="footer-logo">
+
+        🍔 FoodieHub
+
+    </div>
+
+    <p>
+
+        Delicious food delivered to your doorstep.
+
+    </p>
+
+    <div class="footer-social">
+
+        <a href="#">
+
+            <i class="fab fa-facebook-f"></i>
+
+        </a>
+
+        <a href="#">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <a href="#">
+
+            <i class="fab fa-twitter"></i>
+
+        </a>
+
+        <a href="#">
+
+            <i class="fab fa-linkedin-in"></i>
+
+        </a>
+
+        <a href="#">
+
+            <i class="fab fa-youtube"></i>
+
+        </a>
+
+    </div>
+
+    <p class="copyright">
+
+        © 2026 FoodieHub | All Rights Reserved
+
+    </p>
+
+</footer>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>
