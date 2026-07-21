@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Burger House | FoodieHub</title>
+
+    <link rel="stylesheet"
+          href="restaurant.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==========================
+Header
+===========================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back
+
+        </a>
+
+        <h2 class="logo">
+
+            🍔 FoodieHub
+
+        </h2>
+
+        <button class="favorite">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </nav>
+
+</header>
+
+<!--==========================
+Restaurant Banner
+===========================-->
+
+<section class="restaurant-banner">
+
+    <img src="burger_house.jpg"
+         alt="Burger House">
+
+    <div class="overlay">
+
+        <h1>Burger House</h1>
+
+        <p>
+
+            Burgers • Fries • Fast Food
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+Restaurant Information
+===========================-->
+
+<section class="restaurant-info">
+
+    <div class="info-card">
+
+        <div class="rating">
+
+            ⭐ 4.7
+
+            <span>
+
+                (1,850+ Reviews)
+
+            </span>
+
+        </div>
+
+        <div class="details">
+
+            <p>
+
+                <i class="fa-solid fa-clock"></i>
+
+                20 - 25 mins
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                3.1 km Away
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-wallet"></i>
+
+                Minimum Order ₹199
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-truck"></i>
+
+                Free Delivery
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+Navigation Tabs
+===========================-->
+
+<section class="tabs">
+
+    <button class="tab active"
+            data-target="menu">
+
+        Menu
+
+    </button>
+
+    <button class="tab"
+            data-target="reviews">
+
+        Reviews
+
+    </button>
+
+    <button class="tab"
+            data-target="delivery">
+
+        Delivery
+
+    </button>
+
+</section>
+
+<!--==========================
+Menu Section
+===========================-->
+
+<section id="menu"
+         class="tab-content active">
+
+    <h2>
+
+        Popular Categories
+
+    </h2>
+
+    <div class="categories">
+
+        <button>🍔 Burgers</button>
+
+        <button>🍟 Fries</button>
+
+        <button>🥤 Drinks</button>
+
+        <button>🍗 Snacks</button>
+
+        <button>🍰 Dessert</button>
+
+    </div>
+
+    <h2>
+
+        Popular Dishes
+
+    </h2>
+
+    <div class="menu-container">
+
+        <!-- Dish 1 -->
+
+        <div class="menu-card">
+
+            <img src="classic_burger.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    Classic Burger
+
+                </h3>
+
+                <p>
+
+                    Juicy beef patty
+                    with fresh lettuce
+                    & cheese.
+
+                </p>
+
+                <h4>
+
+                    ₹249
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Dish 2 -->
+
+        <div class="menu-card">
+
+            <img src="cheese_burger.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    Cheese Burger
+
+                </h3>
+
+                <p>
+
+                    Loaded with
+                    melted cheese
+                    and fresh veggies.
+
+                </p>
+
+                <h4>
+
+                    ₹299
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+                <!-- Dish 3 -->
+
+        <div class="menu-card">
+
+            <img src="chicken_burger.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    Chicken Burger
+
+                </h3>
+
+                <p>
+
+                    Crispy chicken
+                    fillet with lettuce
+                    & mayonnaise.
+
+                </p>
+
+                <h4>
+
+                    ₹279
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Dish 4 -->
+
+        <div class="menu-card">
+
+            <img src="double_patty_burger.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    Double Patty Burger
+
+                </h3>
+
+                <p>
+
+                    Double juicy patties
+                    with extra cheese
+                    and fresh veggies.
+
+                </p>
+
+                <h4>
+
+                    ₹379
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Dish 5 -->
+
+        <div class="menu-card">
+
+            <img src="french_fries.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    French Fries
+
+                </h3>
+
+                <p>
+
+                    Crispy golden fries
+                    served with tomato
+                    ketchup.
+
+                </p>
+
+                <h4>
+
+                    ₹149
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Dish 6 -->
+
+        <div class="menu-card">
+
+            <img src="crispy_chicken.jpg">
+
+            <div class="menu-info">
+
+                <h3>
+
+                    Crispy Chicken
+
+                </h3>
+
+                <p>
+
+                    Crunchy fried chicken
+                    seasoned with special
+                    herbs & spices.
+
+                </p>
+
+                <h4>
+
+                    ₹329
+
+                </h4>
+
+                <button>
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+Reviews
+===========================-->
+
+<section id="reviews"
+         class="tab-content">
+
+    <h2>
+
+        Customer Reviews
+
+    </h2>
+
+    <div class="review-card">
+
+        <h3>
+
+            ⭐⭐⭐⭐⭐
+
+        </h3>
+
+        <p>
+
+            One of the best burgers
+            I've ever had. Fresh and
+            delicious.
+
+        </p>
+
+        <span>
+
+            - Rahul Sharma
+
+        </span>
+
+    </div>
+
+    <div class="review-card">
+
+        <h3>
+
+            ⭐⭐⭐⭐☆
+
+        </h3>
+
+        <p>
+
+            Crispy fries and
+            quick delivery.
+            Highly recommended.
+
+        </p>
+
+        <span>
+
+            - Priya Singh
+
+        </span>
+
+    </div>
+        <div class="review-card">
+
+        <h3>
+
+            ⭐⭐⭐⭐⭐
+
+        </h3>
+
+        <p>
+
+            Double Patty Burger
+            was juicy and full
+            of flavor.
+
+        </p>
+
+        <span>
+
+            - Aman Verma
+
+        </span>
+
+    </div>
+
+    <div class="review-card">
+
+        <h3>
+
+            ⭐⭐⭐⭐☆
+
+        </h3>
+
+        <p>
+
+            Fresh ingredients,
+            tasty burgers and
+            excellent service.
+
+        </p>
+
+        <span>
+
+            - Sneha Gupta
+
+        </span>
+
+    </div>
+
+</section>
+
+<!--==========================
+Delivery Information
+===========================-->
+
+<section id="delivery"
+         class="tab-content">
+
+    <h2>
+
+        Delivery Information
+
+    </h2>
+
+    <div class="delivery-box">
+
+        <p>
+
+            📍 Address :
+            Golghar, Gorakhpur
+
+        </p>
+
+        <p>
+
+            🚚 Delivery Charge :
+            FREE
+
+        </p>
+
+        <p>
+
+            ⏱ Estimated Time :
+            20-25 Minutes
+
+        </p>
+
+        <p>
+
+            💰 Minimum Order :
+            ₹199
+
+        </p>
+
+        <p>
+
+            📞 Contact :
+            +91 9876543210
+
+        </p>
+
+        <p>
+
+            🕒 Restaurant Timing :
+            10:00 AM - 11:00 PM
+
+        </p>
+
+    </div>
+
+</section>
+
+<script src="restaurant.js"></script>
+
+</body>
+
+</html>
