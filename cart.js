@@ -6,6 +6,23 @@
 // Get cart data from localStorage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+// function to update cart items 
+function updateCartItemCount() {
+
+    const totalItems = cart.reduce((total, item) => {
+        return total + item.quantity;
+    }, 0);
+
+    const cartCount = document.getElementById("cartItemCount");
+
+    if (cartCount) {
+        cartCount.innerText =
+            totalItems + (totalItems === 1 ? " Item" : " Items");
+    }
+
+}
+
+
 // Charges
 const DELIVERY_FEE = 40;
 const PLATFORM_FEE = 10;
@@ -19,11 +36,11 @@ const cartItems = document.getElementById("cartItems");
 // -----------------------------
 
 function displayCart() {
-
+    updateCartItemCount();
     cartItems.innerHTML = "";
 
     if(cart.length === 0){
-
+        
         cartItems.innerHTML = `
             <div class="empty-cart">
                 <h2>Your Cart is Empty 🛒</h2>
